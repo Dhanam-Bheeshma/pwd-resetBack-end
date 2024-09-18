@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-
+console.log("MongoDB URI:", process.env.MONGODB_URI);
 mongoose.connection.on('connected', () => {
   console.log('MongoDB connected');
 });
