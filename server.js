@@ -1,7 +1,8 @@
+
 const express = require('express');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const crypto = require('crypto');
 require('dotenv').config(); // Load environment variables from .env file
